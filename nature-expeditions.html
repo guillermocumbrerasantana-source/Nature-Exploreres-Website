@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gestión de Expediciones | Nature Explorers</title>
+	<link rel="stylesheet" href="/css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="logo">
+				<h1>Nature Explorers</h1>
+			</div>
+			<nav class="navigation">
+				<ul class="nav-list">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="index.html#about">Sobre Nosotros</a></li>
+					<li><a href="index.html#gallery">Galería</a></li>
+					<li><a href="index.html#expeditions">Expediciones</a></li>
+					<li><a href="index.html#equipment">Equipamiento</a></li>
+					<li><a href="index.html#contact">Contacto</a></li>
+					<li><a href="nature-expeditions.html">Gestión de Expediciones</a></li>
+				</ul>
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<section class="crud-section">
+		<div class="container">
+			<h2>Gestión de Expediciones Naturales</h2>
+
+			<div class="crud-form-container">
+				<h3>Agregar Nueva Expedición</h3>
+				<form id="expedition-form" class="expedition-form">
+					<div class="form-group">
+						<label for="expedition-name">Nombre de la Expedición</label>
+						<input type="text" id="expedition-name" name="expeditionName" required>
+					</div>
+
+					<div class="form-group">
+						<label for="expedition-location">Ubicación</label>
+						<input type="text" id="expedition-location" name="expeditionLocation" required>
+					</div>
+
+					<div class="form-group">
+						<label for="expedition-year">Año</label>
+						<input type="number" id="expedition-year" name="expeditionYear" min="2000" max="2030" required>
+					</div>
+
+					<div class="form-group">
+						<label for="expedition-status">Estado</label>
+						<select id="expedition-status" name="expeditionStatus" required>
+							<option value="">Selecciona el estado</option>
+							<option value="planned">Planificada</option>
+							<option value="active">Activa</option>
+							<option value="completed">Completada</option>
+							<option value="cancelled">Cancelada</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<label for="expedition-description">Descripción</label>
+						<textarea id="expedition-description" name="expeditionDescription" rows="4" required></textarea>
+					</div>
+
+					<button type="submit" class="submit-button">Agregar Expedición</button>
+				</form>
+			</div>
+
+			<div class="expeditions-list-container">
+				<h3>Expediciones Naturales Registradas</h3>
+				<div id="expeditions-list" class="expeditions-list">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-content">
+				<div class="footer-section">
+					<h3>Nature Explorers</h3>
+					<p>Explorando las maravillas naturales de nuestro planeta.</p>
+				</div>
+				<div class="footer-section">
+					<h4>Enlaces Rápidos</h4>
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="index.html#about">Sobre Nosotros</a></li>
+						<li><a href="index.html#gallery">Galería</a></li>
+						<li><a href="index.html#contact">Contacto</a></li>
+					</ul>
+				</div>
+				<div class="footer-section">
+					<h4>Síguenos</h4>
+					<div class="social-icons">
+						<a href="#"><i class="fab fa-facebook"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-youtube"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>&copy; 2025 Nature Explorers. Todos los derechos reservados.</p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="/js/nature-expeditions.js"></script>
+</body>
+
+</html>

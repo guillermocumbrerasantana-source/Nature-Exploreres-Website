@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nature Explorers | Aventuras en la Naturaleza</title>
+	<link rel="stylesheet" href="/css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="logo">
+				<h1>Nature Explorers</h1>
+			</div>
+			<nav class="navigation">
+				<ul class="nav-list">
+					<li><a href="#home">Inicio</a></li>
+					<li><a href="#about">Sobre Nosotros</a></li>
+					<li><a href="#gallery">Galería</a></li>
+					<li><a href="#expeditions">Expediciones</a></li>
+					<li><a href="#equipment">Equipamiento</a></li>
+					<li><a href="#contact">Contacto</a></li>
+					<li><a href="nature-expeditions.html">Gestión de Expediciones</a></li>
+				</ul>
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<section id="home" class="hero">
+		<div class="hero-content">
+			<h2>Explorando la Naturaleza</h2>
+			<p>Descubre los tesoros naturales y las últimas aventuras al aire libre</p>
+			<button class="cta-button">Explorar Ahora</button>
+		</div>
+		<div class="scroll-indicator">
+			<i class="fas fa-chevron-down"></i>
+		</div>
+	</section>
+
+	<section id="about" class="about">
+		<div class="container">
+			<h2>Sobre las Aventuras en la Naturaleza</h2>
+			<div class="about-content">
+				<div class="about-text">
+					<p>La exploración de la naturaleza representa una de las experiencias más enriquecedoras para el ser humano.
+						Desde las caminatas por bosques milenarios hasta el ascenso a montañas imponentes, conectamos con nuestro
+						entorno natural.</p>
+					<p>Nuestro objetivo es inspirar a las nuevas generaciones de exploradores y amantes de la naturaleza que
+						continuarán este viaje de descubrimiento y conservación.</p>
+				</div>
+				<div class="about-image">
+					<img src="img/hiking.avif" alt="Senderismo en la montaña">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="gallery" class="gallery">
+		<div class="container">
+			<h2>Galería Natural</h2>
+			<div class="gallery-grid">
+			</div>
+		</div>
+	</section>
+
+	<section id="expeditions" class="expeditions">
+		<div class="container">
+			<h2>Expediciones Destacadas</h2>
+			<div class="expeditions-grid">
+				<div class="expedition-card">
+					<h3>Sendero de los Apalaches</h3>
+					<p>Una de las rutas de senderismo más largas del mundo, atravesando bosques y montañas espectaculares.</p>
+				</div>
+				<div class="expedition-card">
+					<h3>Amazonía Profunda</h3>
+					<p>Exploración de la biodiversidad única de la selva amazónica y sus ecosistemas.</p>
+				</div>
+				<div class="expedition-card">
+					<h3>Alpes Suizos</h3>
+					<p>Ascenso a algunas de las cumbres más emblemáticas de los Alpes europeos.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="equipment" class="equipment">
+		<div class="container">
+			<h2>Equipamiento para Aventuras</h2>
+			<div class="equipment-content">
+				<div class="equipment-item">
+					<i class="fas fa-hiking"></i>
+					<h3>Equipo de Senderismo</h3>
+					<p>Material ligero y resistente para caminatas de un día o travesías de varios días.</p>
+				</div>
+				<div class="equipment-item">
+					<i class="fas fa-campground"></i>
+					<h3>Camping</h3>
+					<p>Tiendas, sacos de dormir y equipo de cocina para acampar en la naturaleza.</p>
+				</div>
+				<div class="equipment-item">
+					<i class="fas fa-mountain"></i>
+					<h3>Escalada</h3>
+					<p>Equipo de seguridad y técnico para ascender paredes rocosas y montañas.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact" class="contact">
+		<div class="container">
+			<h2>Contacto</h2>
+			<form id="contact-form" class="contact-form">
+				<div class="form-group">
+					<label for="name">Nombre completo</label>
+					<input type="text" id="name" name="name" required>
+					<span class="error-message" id="name-error"></span>
+				</div>
+
+				<div class="form-group">
+					<label for="email">Correo electrónico</label>
+					<input type="email" id="email" name="email" required>
+					<span class="error-message" id="email-error"></span>
+				</div>
+
+				<div class="form-group">
+					<label for="subject">Asunto</label>
+					<select id="subject" name="subject" required>
+						<option value="">Selecciona un asunto</option>
+						<option value="info">Información general</option>
+						<option value="expedition">Próximas expediciones</option>
+						<option value="equipment">Consultas sobre equipamiento</option>
+						<option value="other">Otro</option>
+					</select>
+					<span class="error-message" id="subject-error"></span>
+				</div>
+
+				<div class="form-group">
+					<label for="message">Mensaje</label>
+					<textarea id="message" name="message" rows="5" required></textarea>
+					<span class="error-message" id="message-error"></span>
+				</div>
+
+				<div class="form-group">
+					<label class="checkbox-label">
+						<input type="checkbox" id="newsletter" name="newsletter">
+						<span class="checkmark"></span>
+						Suscribirme al newsletter de Nature Explorers
+					</label>
+				</div>
+
+				<button type="submit" class="submit-button">Enviar Mensaje</button>
+				<div id="form-message" class="form-message"></div>
+			</form>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-content">
+				<div class="footer-section">
+					<h3>Nature Explorers</h3>
+					<p>Explorando las maravillas naturales de nuestro planeta.</p>
+				</div>
+				<div class="footer-section">
+					<h4>Enlaces Rápidos</h4>
+					<ul>
+						<li><a href="#home">Inicio</a></li>
+						<li><a href="#about">Sobre Nosotros</a></li>
+						<li><a href="#gallery">Galería</a></li>
+						<li><a href="#contact">Contacto</a></li>
+						<li><a href="nature-expeditions.html">Gestión de Expediciones</a></li>
+					</ul>
+				</div>
+				<div class="footer-section">
+					<h4>Síguenos</h4>
+					<div class="social-icons">
+						<a href="#"><i class="fab fa-facebook"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-youtube"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>&copy; 2025 Nature Explorers. Todos los derechos reservados.</p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="/js/main.js"></script>
+</body>
+
+</html>
